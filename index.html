@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Clientes</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="main-container">
+        <div class="container">
+            <b><h1>LLAMOSA POOL BAR</h1></b>
+            <h1>Consulta de Cliente</h1>
+            <form id="search-form">
+                <label for="search-cedula">Número de Cédula:</label>
+                <input type="text" id="search-cedula" name="search-cedula" required>
+                <button type="submit">Buscar</button>
+            </form>
+            <div id="search-result"></div>
+            
+            <!-- Botón para dirigir a la sección de registro -->
+            <button id="register-button">Registrar Nuevo Cliente</button>
+        </div>
+
+        <!-- Sección de exportar datos -->
+        <div class="export-container">
+            <h2>Exportar Datos</h2>
+            <button id="export-today-button">Exportar datos del día</button>
+            <label for="export-date"></label><br>
+            <br>
+            <input type="date" id="export-date" name="export-date">
+            <button id="export-date-button">Exportar seleccion</button>
+        </div>
+    </div>
+    
+    <!-- Sección de registro -->
+    <div class="container" id="client-form" style="display: none;">
+       
+        <h2>Registro de clientes "LLAMOSA POOL BAR"</h2>
+        <form>
+            <label for="cedula">Número de Cédula:</label>
+            <input type="text" id="cedula" name="cedula" required>
+
+            <label for="birthdate">Fecha de Nacimiento:</label>
+            <input type="date" id="birthdate" name="birthdate" required>
+            
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="phone">Celular:</label>
+            <input type="text" id="phone" name="phone" required>
+            
+            <button type="submit">Registrar</button>
+            <br>
+            <button id="back-button">Atrás</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
